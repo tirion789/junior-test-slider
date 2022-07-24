@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 
 export const useAdaptive = (innerElementWidth: number) => {
-  const containerRef = useRef <HTMLElement>(null);
+  const containerRef = useRef<HTMLUListElement>(null);
   const [elementsCount, setElementsCount] = useState(0);
 
   useEffect(() => {
@@ -17,5 +17,5 @@ export const useAdaptive = (innerElementWidth: number) => {
     return () => window.removeEventListener('resize', handleResize);
   }, [elementsCount, containerRef, innerElementWidth]);
 
-  return [elementsCount, containerRef];
+  return [elementsCount, containerRef] as const;
 };
