@@ -98,7 +98,7 @@ const Home = () => {
       }, 5000)
   return () => clearInterval(interval)
   
-}, [length, activeIndex, count, sliderRef])
+}, [length, activeIndex, count, sliderRef, memoizedGetPercent, width])
   const [touchPosition, setTouchPosition] = useState(null)
 
   const handleTouchStart = (e) => {
