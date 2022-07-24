@@ -11,6 +11,12 @@
         color: $blue;
     }
 
+    @media (max-width: 860px) {
+        &__buttons {
+            position: absolute;
+            bottom: 80px
+        }
+
     @media (max-width: 320px) {
         &__buttons {
             position: absolute;
@@ -19,6 +25,7 @@
             justify-content: flex-end;
             width: 260px;
         }
+    }
     }
 }
 
