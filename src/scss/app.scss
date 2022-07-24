@@ -1,0 +1,21 @@
+@import '../scss/normalize.scss';
+@import '../scss/variables.scss';
+
+.wrapper {
+  max-width: 1448px;
+  height: 100%;
+  margin: 160px auto;
+
+}
+
+.content {
+  padding:  0 140px;
+
+
+  @media (max-width: 320px) {
+    padding: 0 20px;
+    position: relative;
+  }
+}
+
+

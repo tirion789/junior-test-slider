@@ -1,0 +1,27 @@
+@import '../scss/variables.scss';
+
+.content__button_next {
+    padding: 28px;
+    margin-left: 40px;
+    border: 1px solid $marble;
+    cursor: pointer;
+    background-color: $white;
+    position: relative;
+
+    @media (max-width: 320px) {
+        margin-left: auto;
+    }
+
+    &:hover {
+        background-color: $marble;
+    }
+
+    &::before {
+        content: url('../assets/Vector.svg');
+        display: block;
+        position: absolute;
+        left: 21px;
+        bottom: 15px;
+    }
+
+}

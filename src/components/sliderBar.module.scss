@@ -1,0 +1,52 @@
+@import '../scss/variables.scss';
+
+.progressBar {
+    max-width: 320px;
+    width: 100%;
+    padding: 29px 20px;
+
+    @media (max-width: 320px) {
+        position: absolute;
+        bottom: -50px;
+        left: 85px;
+        z-index: 1;
+        max-width: 130px;
+        padding: 0;
+        
+    }
+
+
+    &__fill {
+        display: block;
+        width: 19.2%;
+        border-radius: 8px;
+        transition: width 0.8s ease;
+        height: 1px;
+        border: 1px solid $blue;
+
+        @media (max-width: 320px) {
+            width: 22px;
+        }
+    };
+
+    &__unfill{
+        height: 15px;
+        display: block;
+        background: #fff;
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid #C8D9FB;
+        height: 0;
+    };
+
+    @keyframes progressbar {
+        from {
+            width:0
+        }
+        to {
+            width:100%
+        }
+    }
+}
+
+

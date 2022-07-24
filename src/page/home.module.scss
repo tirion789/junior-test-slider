@@ -1,0 +1,74 @@
+@import '../scss/variables.scss';
+
+.header {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-between;
+
+    &__title {
+        font-weight: 700;
+        font-size: 50px;
+        color: $blue;
+    }
+
+    @media (max-width: 320px) {
+        &__buttons {
+            position: absolute;
+            bottom: -77px;
+            display: flex;
+            justify-content: flex-end;
+            width: 260px;
+        }
+    }
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    list-style: none;
+    overflow: hidden;
+    transition: 1s;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+
+    li {
+        text-align: center;
+        width: 260px;
+        border: 1px solid $marble;
+        padding: 20px 20px 22px 20px;
+        transition: 1s;
+
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+
+        h2 {
+            color: $blue;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            width: 220px;
+            text-align: initial;
+            height: 78px;
+            margin-top: 10px;
+            letter-spacing: -0.4px
+        }
+        p {
+            color: $blue;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 22px;
+            text-align: initial;
+            margin-top: 10px;
+        }
+    }
+}
+
+
+    
+    
+
