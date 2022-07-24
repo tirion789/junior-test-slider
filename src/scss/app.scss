@@ -5,24 +5,10 @@
   max-width: 1448px;
   height: 100%;
   margin: 160px auto;
-
-  @media (max-width: 1141px) {
-    width: 1141px;
-  }
-
-  @media (max-width: 860px) {
-    width: 860px;
-  }
-
-  @media (max-width: 320px) {
-    max-width: 320px;
-  }
-
 }
 
 .content {
   padding:  0 140px;
-
 
   @media (max-width: 320px) {
     padding: 0 20px;
